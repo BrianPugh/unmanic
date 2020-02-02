@@ -393,7 +393,7 @@ class FFMPEGHandle(object):
         command = ["-hide_banner", "-loglevel", "info", "-strict", "-2", "-max_muxing_queue_size", "512"]
 
         # Add in probe information to help fix some errors
-        command.extend(["-analyzeduration", "1000M", "-probesize", "1000M", "-core_only", "1"])
+        command.extend(["-analyzeduration", "2147483647", "-probesize", "2147483647", "-core_only", "1"])
 
         # Read stream data
         streams_to_map = []
